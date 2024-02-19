@@ -1,15 +1,15 @@
 strings:
   inputs:
-    - TalentWarsFigmaQuestion/Resources/Strings/en.lproj
+    - TalentWarsFigmaQuestion/SharedResources/Resources/Strings/en.lproj
   outputs:
     - templateName: structured-swift5
-      output: TalentWarsFigmaQuestion/Generated/Strings+Generated.swift
+      output: TalentWarsFigmaQuestion/SharedResources/Generated/Strings+Generated.swift
 
 xcassets:
   inputs:
-    - TalentWarsFigmaQuestion/Resources/Assets.xcassets
+    - TalentWarsFigmaQuestion/SharedResources/Resources/Assets.xcassets
   outputs:
     - templateName: swift5
       params:
         forceProvidesNamespaces: true
-      output: TalentWarsFigmaQuestion/Generated/XCAssets+Generated.swift
+      output: TalentWarsFigmaQuestion/SharedResources/Generated/XCAssets+Generated.swift
