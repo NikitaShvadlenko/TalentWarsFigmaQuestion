@@ -33,7 +33,7 @@ final class SearchView: UIView {
 // MARK: - Private
 extension SearchView {
     private func makeAppearance() {
-        backgroundColor = Asset.mainColor.color
+        backgroundColor = Asset.Colors.mainColor.color
     }
 
     private func addSubviews() {
