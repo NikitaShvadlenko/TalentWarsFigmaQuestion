@@ -13,3 +13,13 @@ xcassets:
       params:
         forceProvidesNamespaces: true
       output: TalentWarsFigmaQuestion/SharedResources/Generated/XCAssets+Generated.swift
+
+fonts:
+   inputs: 
+    - TalentWarsFigmaQuestion/SharedResources/Resources/Fonts
+   outputs:
+    - templateName: swift5
+      params:
+        publicAccess: true
+      output: TalentWarsFigmaQuestion/SharedResources/Generated/Fonts.swift
+           
