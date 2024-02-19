@@ -15,7 +15,7 @@ final class MainCoordinator: Coordinator {
     }
 
     func start() {
-        let searchViewController = ViewController()
+        let searchViewController = SearchViewController()
         navigationController.pushViewController(searchViewController, animated: false)
     }
 }
