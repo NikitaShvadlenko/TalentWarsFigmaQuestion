@@ -68,6 +68,8 @@ open class TextField: UIView, TextFieldProtocol {
         return view
     }()
 
+    private var shouldShowCustomClearButton = false
+
     private let placeholderAttributes: [NSAttributedString.Key: Any] = [
         .foregroundColor: Asset.Colors.titleLabel.color,
         .font: FontFamily.Inter.bold.font(size: 16)
@@ -93,6 +95,7 @@ open class TextField: UIView, TextFieldProtocol {
         super.init(frame: .zero)
         addSubviews()
         makeConstraints()
+        textField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
     }
 
     public required init?(coder: NSCoder) {
@@ -136,9 +139,9 @@ extension TextField: ViewModelConfigurable {
         titleLabel.isHidden = viewModel.title == nil ? true : false
 
         // Text field
+        self.shouldShowCustomClearButton = viewModel.needsShowClearButton
         textField.isEnabled = viewModel.isEnabled
         textField.keyboardType = viewModel.keyboardType
-        textField.clearButtonMode = viewModel.needsShowClearButton ? .whileEditing : .never
         textField.text = viewModel.text
         textField.autocorrectionType = viewModel.autocorrectionType
         textField.textAlignment = viewModel.textAlignment
@@ -173,5 +176,14 @@ private extension TextField {
         textField.snp.makeConstraints { make in
             make.height.equalTo(appearance.textFieldHeight).priority(.high)
         }
+    }
+
+    @objc 
+    func textFieldEditingChanged(_ textField: UITextField) {
+        onEdit?(textField.text)
+        guard let text = textField.text else {
+            return
+        }
+        self.textField.showsClearButton = !text.isEmpty
     }
 }
