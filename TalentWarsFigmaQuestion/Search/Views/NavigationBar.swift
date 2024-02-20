@@ -10,9 +10,20 @@ import UIKit
 
 final class NavigationBar: UIView {
 
-    private lazy var searchBar: UISearchBar = {
-        let searchBar = UISearchBar()
-        searchBar.placeholder = L10n.Search.SearchBar.placeholder
+    private lazy var searchBar: TextField = {
+        let searchBar = TextField()
+        searchBar.configure(
+            with:
+                TextFieldDefaultViewModel(
+                    isEnabled: true,
+                    keyboardType: .default,
+                    placeholder: L10n.Search.SearchBar.placeholder,
+                    needsShowClearButton: true,
+                    autocorrectionType: .no,
+                    textAlignment: .justified,
+                    isSecureTextEntry: false
+                )
+        )
         return searchBar
     }()
 
@@ -38,10 +49,9 @@ final class NavigationBar: UIView {
     }
 }
 
-// MARK: - Public
-extension NavigationBar {
-    func configureView(title: String) {
-        titleLabel.text = title
+// MARK: - ViewModelConfigurable
+extension NavigationBar: ViewModelConfigurable {
+    func configure(with viewModel: String) {
     }
 }
 

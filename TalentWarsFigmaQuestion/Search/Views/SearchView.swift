@@ -12,7 +12,7 @@ final class SearchView: UIView {
 
     private lazy var navigationView: UIView = {
         let view = NavigationBar()
-        view.configureView(title: L10n.Search.SearchBar.popularRightNow)
+        view.configure(with: L10n.Search.SearchBar.popularRightNow)
         return view
     }()
 
