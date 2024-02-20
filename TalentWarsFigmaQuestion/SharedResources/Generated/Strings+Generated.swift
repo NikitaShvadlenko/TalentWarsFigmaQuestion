@@ -10,8 +10,16 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Movies!
-  internal static let appName = L10n.tr("Localizable", "appName", fallback: "Movies!")
+  internal enum Search {
+    internal enum SearchBar {
+      /// Search
+      internal static let placeholder = L10n.tr("Localizable", "Search.SearchBar.Placeholder", fallback: "Search")
+      /// Popular Right now
+      internal static let popularRightNow = L10n.tr("Localizable", "Search.SearchBar.PopularRightNow", fallback: "Popular Right now")
+      /// Your Results
+      internal static let yourResults = L10n.tr("Localizable", "Search.SearchBar.YourResults", fallback: "Your Results")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

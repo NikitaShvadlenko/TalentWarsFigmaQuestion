@@ -21,12 +21,6 @@ public typealias Font = FontConvertible.Font
 // swiftlint:disable identifier_name line_length type_body_length
 public enum FontFamily {
   public enum Inter {
-    public static let black = FontConvertible(name: "Inter-Black", family: "Inter", path: "Inter-Black.ttf")
-    public static let bold = FontConvertible(name: "Inter-Bold", family: "Inter", path: "Inter-Bold.ttf")
-    public static let extraBold = FontConvertible(name: "Inter-ExtraBold", family: "Inter", path: "Inter-ExtraBold.ttf")
-    public static let extraLight = FontConvertible(name: "Inter-ExtraLight", family: "Inter", path: "Inter-ExtraLight.ttf")
-    public static let light = FontConvertible(name: "Inter-Light", family: "Inter", path: "Inter-Light.ttf")
-    public static let medium = FontConvertible(name: "Inter-Medium", family: "Inter", path: "Inter-Medium.ttf")
     public static let regular = FontConvertible(name: "Inter-Regular", family: "Inter", path: "Inter-VariableFont_slnt,wght.ttf")
     public static let black = FontConvertible(name: "Inter-Regular_Black", family: "Inter", path: "Inter-VariableFont_slnt,wght.ttf")
     public static let blackItalic = FontConvertible(name: "Inter-Regular_Black-Italic", family: "Inter", path: "Inter-VariableFont_slnt,wght.ttf")
@@ -45,9 +39,7 @@ public enum FontFamily {
     public static let semiBoldItalic = FontConvertible(name: "Inter-Regular_SemiBold-Italic", family: "Inter", path: "Inter-VariableFont_slnt,wght.ttf")
     public static let thin = FontConvertible(name: "Inter-Regular_Thin", family: "Inter", path: "Inter-VariableFont_slnt,wght.ttf")
     public static let thinItalic = FontConvertible(name: "Inter-Regular_Thin-Italic", family: "Inter", path: "Inter-VariableFont_slnt,wght.ttf")
-    public static let semiBold = FontConvertible(name: "Inter-SemiBold", family: "Inter", path: "Inter-SemiBold.ttf")
-    public static let thin = FontConvertible(name: "Inter-Thin", family: "Inter", path: "Inter-Thin.ttf")
-    public static let all: [FontConvertible] = [black, bold, extraBold, extraLight, light, medium, regular, black, blackItalic, bold, boldItalic, extraBold, extraBoldItalic, extraLight, extraLightItalic, italic, light, lightItalic, medium, mediumItalic, semiBold, semiBoldItalic, thin, thinItalic, semiBold, thin]
+    public static let all: [FontConvertible] = [regular, black, blackItalic, bold, boldItalic, extraBold, extraBoldItalic, extraLight, extraLightItalic, italic, light, lightItalic, medium, mediumItalic, semiBold, semiBoldItalic, thin, thinItalic]
   }
   public enum Jomhuria {
     public static let regular = FontConvertible(name: "Jomhuria-Regular", family: "Jomhuria", path: "Jomhuria-Regular.ttf")

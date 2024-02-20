@@ -10,12 +10,10 @@ import UIKit
 
 final class SearchView: UIView {
 
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.font = FontFamily.Jomhuria.regular.font(size: 90)
-        label.textAlignment = .center
-        label.text = "Hello world"
-        return label
+    private lazy var navigationView: UIView = {
+        let view = NavigationBar()
+        view.configureView(title: L10n.Search.SearchBar.popularRightNow)
+        return view
     }()
 
     override init(frame: CGRect) {
@@ -33,16 +31,16 @@ final class SearchView: UIView {
 // MARK: - Private
 extension SearchView {
     private func makeAppearance() {
-        backgroundColor = Asset.Colors.mainColor.color
+        backgroundColor = Asset.Colors.primaryBackground.color
     }
 
     private func addSubviews() {
-        addSubview(titleLabel)
+        addSubview(navigationView)
     }
 
     private func makeConstraints() {
-        titleLabel.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+        navigationView.snp.makeConstraints { make in
+            make.top.horizontalEdges.equalToSuperview()
         }
     }
 }

@@ -24,7 +24,8 @@ internal typealias AssetColorTypeAlias = ColorAsset.Color
 internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal enum Colors {
-    internal static let navigationBarColor = ColorAsset(name: "NavigationBarColor")
+    internal static let navigationBar = ColorAsset(name: "NavigationBar")
+    internal static let navigationBarTitle = ColorAsset(name: "NavigationBarTitle")
     internal static let primaryBackground = ColorAsset(name: "PrimaryBackground")
     internal static let secondaryBackground = ColorAsset(name: "SecondaryBackground")
     internal static let subtitleLabel = ColorAsset(name: "SubtitleLabel")
