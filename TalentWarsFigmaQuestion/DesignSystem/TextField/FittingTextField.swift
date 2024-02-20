@@ -18,13 +18,19 @@ final class FittingTextField: UITextField {
     }
 
     /// Custom clear button, as required by design
-    private lazy var customClearButton: UIButton = {
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage(systemName: "xmark"), for: .normal)
-        button.addTarget(self, action: #selector(clearText), for: .touchUpInside)
-        button.frame = CGRect(x: 0, y: 0, width: 12, height: 19)
-        button.isHidden = true
-        return button
+    private lazy var customClearButton: UILabel = {
+        let label = UILabel()
+        label.font = FontFamily.Inter.bold.font(size: 16)
+        label.textColor = Asset.Colors.clearButton.color
+        // design requires to use the X symbol, otherwise I would use "xmark" SFSymbol.
+        label.text = "X"
+        label.textAlignment = .center
+        label.frame = CGRect(x: 0, y: 0, width: 12, height: 19)
+        label.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(clearText))
+        label.addGestureRecognizer(tapGesture)
+        label.isHidden = true
+        return label
     }()
 
     public var showsClearButton = false {

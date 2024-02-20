@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		1490BB753C07E343ED68D3C6 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F751F940AB98B39EC81817 /* TextField.swift */; };
 		178A6F665D7107DE69907CC5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F02E65454E61D1AA101F3 /* NavigationBar.swift */; };
 		1BCD33C58AF2DB1AE121EA90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DA2E8E596D902F9D2B22A6 /* AppDelegate.swift */; };
+		31B5BF3AAF60C05C0E8A04C1 /* UIImage+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B02C3114D3836CE1E218B42E /* UIImage+SFSymbol.swift */; };
 		343158C7B3C4DFDE09F89E0F /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782999E852BE7C44DDAC6C7A /* XCAssets+Generated.swift */; };
 		3B2F1DD9714453CA331CEAC7 /* FittingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594A0B96C80F95418F30FBFF /* FittingTextField.swift */; };
 		3B7D486B9CFB3310825EB13E /* TextFieldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CFEFC431C578D6910DAEA /* TextFieldViewModel.swift */; };
@@ -19,6 +20,7 @@
 		6BF581907C89243BC7728857 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A68C825094C2E5B8BA631D5 /* Inter-VariableFont_slnt,wght.ttf */; };
 		861CD61E658DA25E380AC7E8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF0C99158F0B1E655167CB /* Fonts.swift */; };
 		8CB0B6D433C86D71FD697310 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DEE26818247E7CC1E44F68 /* MainCoordinator.swift */; };
+		8DC492618661AB33D0BA9778 /* SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDFFE2D0EE9FBA0ECF31DDF /* SFSymbol.swift */; };
 		9A566EB294101FDCE4BD915F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524310A843DF09F48019E642 /* LaunchScreen.storyboard */; };
 		A53F93B3050A2AC5301D3361 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 64A8B91553B85FC8D18DE071 /* OFL.txt */; };
 		A989BCD2055032BFCEF5B96D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E86C462338AF2A6445B1EDD /* SearchViewController.swift */; };
@@ -32,12 +34,13 @@
 /* Begin PBXFileReference section */
 		02DA2E8E596D902F9D2B22A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A68C825094C2E5B8BA631D5 /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		1BDFFE2D0EE9FBA0ECF31DDF /* SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbol.swift; sourceTree = "<group>"; };
 		2B19F64D8CDAF818E078CE2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		379CC76A19CA629299F307BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FCB147978DCA7DB9EDC82BC /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
 		43963B0665C4744E2486DF1E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		45F751F940AB98B39EC81817 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		489379C44AE47EECB552EEF7 /* TalentWarsFigmaQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentWarsFigmaQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		489379C44AE47EECB552EEF7 /* TalentWarsFigmaQuestion.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = TalentWarsFigmaQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526CFEFC431C578D6910DAEA /* TextFieldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewModel.swift; sourceTree = "<group>"; };
 		594A0B96C80F95418F30FBFF /* FittingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingTextField.swift; sourceTree = "<group>"; };
 		5D8621EFCFCDE3C3692DB74B /* Strings+Generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		8E86C462338AF2A6445B1EDD /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8FA2223910E269022D597F9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CFFCE7A6E1482056EA1116F /* Jomhuria-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jomhuria-Regular.ttf"; sourceTree = "<group>"; };
+		B02C3114D3836CE1E218B42E /* UIImage+SFSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SFSymbol.swift"; sourceTree = "<group>"; };
 		D0DEE26818247E7CC1E44F68 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		DE3F02E65454E61D1AA101F3 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		EE3D6099B0451B9F9D104A78 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 		9E8956F9CD24B701D3A997FA /* DesignSystem */ = {
 			isa = PBXGroup;
 			children = (
+				FE71C5762603D7D436CA28D9 /* SFSymbol */,
 				A3BB1726C35EFC55A7FCCCE1 /* TextField */,
 				D0BEFA7AC9295BCF29469421 /* ViewModelConfigurable */,
 			);
@@ -212,6 +217,15 @@
 			path = Inter;
 			sourceTree = "<group>";
 		};
+		FE71C5762603D7D436CA28D9 /* SFSymbol */ = {
+			isa = PBXGroup;
+			children = (
+				1BDFFE2D0EE9FBA0ECF31DDF /* SFSymbol.swift */,
+				B02C3114D3836CE1E218B42E /* UIImage+SFSymbol.swift */,
+			);
+			path = SFSymbol;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -245,6 +259,12 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = "Nikita Shvadlenko";
+				TargetAttributes = {
+					4B3C94DAD2E01F450BA14DC6 = {
+						DevelopmentTeam = SGM5527A99;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = BA7E548687670581D6BDCB06 /* Build configuration list for PBXProject "TalentWarsFigmaQuestion" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -314,11 +334,13 @@
 				861CD61E658DA25E380AC7E8 /* Fonts.swift in Sources */,
 				8CB0B6D433C86D71FD697310 /* MainCoordinator.swift in Sources */,
 				178A6F665D7107DE69907CC5 /* NavigationBar.swift in Sources */,
+				8DC492618661AB33D0BA9778 /* SFSymbol.swift in Sources */,
 				ABD6510DE3C1FDB5B23B1AD7 /* SearchView.swift in Sources */,
 				A989BCD2055032BFCEF5B96D /* SearchViewController.swift in Sources */,
 				CE760BCFFE767A8770D06B09 /* Strings+Generated.swift in Sources */,
 				1490BB753C07E343ED68D3C6 /* TextField.swift in Sources */,
 				3B7D486B9CFB3310825EB13E /* TextFieldViewModel.swift in Sources */,
+				31B5BF3AAF60C05C0E8A04C1 /* UIImage+SFSymbol.swift in Sources */,
 				F428E5D2F3B6301463B2967E /* ViewModelConfigurable.swift in Sources */,
 				343158C7B3C4DFDE09F89E0F /* XCAssets+Generated.swift in Sources */,
 			);
@@ -351,8 +373,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SZ5CPZCXJA;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SGM5527A99;
 				DISPLAY_NAME = TalentWarsFigmaQuestion;
 				INFOPLIST_FILE = TalentWarsFigmaQuestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,7 +382,6 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitaShvad.xylophone;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -370,9 +391,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SZ5CPZCXJA;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = SGM5527A99;
 				DISPLAY_NAME = TalentWarsFigmaQuestion;
 				INFOPLIST_FILE = TalentWarsFigmaQuestion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +401,6 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikitaShvad.xylophone;
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
